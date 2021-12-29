@@ -1,0 +1,28 @@
+body {
+    background-color: lightskyblue;
+    margin:0;
+    padding: 0;
+}
+
+
+#rsa-div {
+    height:100%;
+    width:48%;
+    border-right: 6px solid green;
+    height: 500px;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#rsa_sub_div {
+    margin-top: 40px;
+}
+
+#hybrid-div {
+    float: right;
+    margin-right: 100px;
+}
+
+#hybrid_sub_div {
+    margin-top: 40px;
+}

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="/decrypt-success-style.css">
+     <script>
+        $.myfun = function() {
+            window.open('http://localhost:5000/download')
+        };
+
+        function fun(){
+            $.myfun();
+        };
+
+
+     </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="rsa-div">
+        <h1 style="margin-top: 20px; color:red" >RSA Decrypted Data</h1>
+        <div id="rsa_sub_div">
+            <h5>Firstname: <b>{{rsa_decrypted_fn}}</b></h5>
+            <h5>Lastname: <b>{{rsa_decrypted_ln}}</b></h5>
+            <h5>Email: <b>{{email}}</b></h5>
+            <h5>Time taken to decrypt the data: <b>{{rsa_decrypt_time}}</b></h5>
+        </div>
+    </div>
+
+    <div id="hybrid-div">
+        <h1 style="margin-top: 20px; color:red">Hybrid Decrypted Data</h1>
+        <div id="hybrid_sub_div">
+            <h5>Firstname: <b>{{aes_decrypted_fn}}</b></h5>
+            <h5>Lastname: <b>{{aes_decrypted_ln}}</b></h5>
+            <h5>Email: <b>{{email}}</b></h5>
+            <h5>Time taken to decrypt the data: <b>{{hybrid_decrypt_time}}</b></h5>
+        </div>
+    </div>
+    {{#if message }}
+        <center><h4 class="alert alert-danger mt-4" >{{ message }}</h4></center>
+    {{/if}}
+</body>
+</html>

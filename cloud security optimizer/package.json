@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "execution-time": "^1.4.1",
+    "express": "^4.17.1",
+    "express-zip": "^3.0.0",
+    "hbs": "^4.1.1",
+    "mysql": "^2.18.1",
+    "node-rsa": "^1.1.1",
+    "nodemon": "^2.0.7"
+  }
+}

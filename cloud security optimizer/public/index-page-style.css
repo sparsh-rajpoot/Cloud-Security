@@ -1,0 +1,19 @@
+body {
+    background-color: orange;
+    margin:0;
+    padding: 0;
+}
+
+#container1 {
+    height:100%;
+    width:48%;
+    border-right: 6px solid green;
+    height: 500px;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#container2 {
+    float: right;
+    margin-right: 5%;
+}

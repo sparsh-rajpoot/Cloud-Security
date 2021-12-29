@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script>
+        $.myfun = function() {
+            window.open('http://localhost:5000/download')
+        };
+
+        function fun(){
+            $.myfun();
+        };
+
+
+     </script>
+    <title>Document</title>
+</head>
+<body>
+    {{#if message }}
+        <h4 class="alert alert-danger mt-4">{{ message }}</h4>
+    {{/if}}
+    <h5>time taken by rsa to encrypt text: {{rsa_encrypt_time}}</h5>
+    <h5>time taken by hybrid to encrypt text : {{hybrid_encrypt_time}}</h5>
+    <h5>Click Here to download your keys <button id="but" onclick="fun()" class="btn btn-danger">Click</button></h5>
+</body>
+</html>
